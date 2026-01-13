@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitat Tətbiqi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#create" id="create-link">Sitat yaradın</a></li>
+            <li><a href="#old" id="old-link">Köhnə Sitatlar</a></li>
+        </ul>
+    </nav>
+
+    <div id="create-section" class="section active">
+        <h2>Yeni Sitat Yaradın</h2>
+        <button id="create-btn">Yeni Sitat Yaradın</button>
+        <div id="quote-display"></div>
+        <div id="action-btns" class="action-btns" style="display: none;">
+            <button class="save-btn">Yadda Saxla</button>
+            <button class="cancel-btn">Ləğv Et</button>
+        </div>
+    </div>
+
+    <div id="old-section" class="section">
+        <h2>Köhnə Sitatlar</h2>
+        <ul id="old-quotes-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
