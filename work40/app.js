@@ -33,7 +33,7 @@ oldLink.addEventListener('click', (e) => {
 });
 
 createBtn.addEventListener('click', async () => {
-    try {
+    
         const response = await fetch('https://dummyjson.com/quotes/random');
         const data = await response.json();
         currentQuote = data;
@@ -42,9 +42,7 @@ createBtn.addEventListener('click', async () => {
                     <p><strong>Author:</strong> ${data.author}</p>
                 `;
         actionBtns.style.display = 'flex';
-    } catch (error) {
-        quoteDisplay.innerHTML = '<p>Error fetching quote. Please try again.</p>';
-    }
+
 });
 
 cancelBtn.addEventListener('click', () => {
@@ -89,6 +87,7 @@ function loadOldQuotes() {
         });
     });
 }
+
 
 
 showSection('create');
